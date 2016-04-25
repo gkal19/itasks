@@ -6,6 +6,10 @@ Aplicativo para gerenciamento de tarefas criado com Ionic/Cordova.
 ![repo3](http://imgur.com/MXElhBc.png) 
 ![repo4](http://imgur.com/q43hhG6.png)
 
-Atualização: 25.04.2016:
+Atualização: 25.04.2016 - 18:00:
 ---------
 No meio da bagunça de arquivos, perdi a pasta "raíz" do aplicativo e está faltando a pasta `platform`. Brevemente coloco ela de volta aqui. :smile:
+
+Atualização: 25.04.2016 - 19:05:
+---------
+Finalmente, tudo está neste repositório e aliás recomendo o Ionic a vocês. :smile:
