@@ -1,20 +1,9 @@
-// Ionic Starter App
-
-// angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
-// the 2nd parameter is an array of 'requires'
 angular.module('starter', ['ionic'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     if(window.cordova && window.cordova.plugins.Keyboard) {
-      // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-      // for form inputs)
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-
-      // Don't remove this line unless you know what you are doing. It stops the viewport
-      // from snapping when text inputs are focused. Ionic handles this internally for
-      // a much nicer keyboard experience.
       cordova.plugins.Keyboard.disableScroll(true);
     }
     if(window.StatusBar) {
@@ -29,33 +18,33 @@ angular.module('starter', ['ionic'])
 
   $scope.items = [
     {
-      titulo: 'Bem vindo ao iTasks',
-      descricao: 'Seja bem vindo ao iTasks, o seu aplicativo para gerenciamento de tarefas',
+      title: 'Welcome to iTasks',
+      description: 'Welcome to iTasks, Your application for managing tasks. Created by: gkal19',
     }
   ];
 
   $scope.clickk = function(item) {
-    alert('MAOE =)');
+    alert('Hi');
     console.log(item);
   };
 
-  $scope.mostarItem = function(item) {
+  $scope.showItem = function(item) {
     var alertPopup = $ionicPopup.alert({
-      title:  item.titulo,
-      template: 'Descrição: ' + item.descricao + '.'
+      title:  item.title,
+      template: 'Description: ' + item.description + '.'
     });
 
     alertPopup.then(function(res) {
-      console.log('Tarefa exibida');
+      console.log('Task Displayed');
     });
   };
 
-  $scope.moverItem = function(item, fromIndex, toIndex) {
+  $scope.moveItem = function(item, fromIndex, toIndex) {
     $scope.items.splice(fromIndex, 1);
     $scope.items.splice(toIndex, 0, item);
   };
 
-  $scope.removerTarefa = function(item) {
+  $scope.removeItem = function(item) {
     $scope.items.splice($scope.items.indexOf(item), 1);
   };
 
@@ -63,22 +52,22 @@ angular.module('starter', ['ionic'])
   $scope.addItemClick =  function(){
      $scope.data = {};
     $ionicPopup.show({
-      title: 'Adicionar Tarefa',
+      title: 'Add Task',
       templateUrl: 'popup.html',
       scope: $scope,
       buttons: [{
-        text: 'Cancelar'
+        text: 'Cancel'
       }, {
-        text: 'Adicionar',
+        text: 'Add Task',
         type: 'button-positive',
         onTap: function(e) {
-          console.log('titulo: ' + $scope.data.titulo);
+          console.log('title: ' + $scope.data.title);
 
           var novoItem = {
-            titulo: $scope.data.titulo,
-            descricao: $scope.data.descricao
+            titulo: $scope.data.title,
+            descricao: $scope.data.description
           }
-          return $scope.items.push(novoItem);
+          return $scope.items.push(newItem);
         }
       }]
     });
