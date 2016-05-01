@@ -63,9 +63,9 @@ angular.module('starter', ['ionic'])
         onTap: function(e) {
           console.log('title: ' + $scope.data.title);
 
-          var novoItem = {
-            titulo: $scope.data.title,
-            descricao: $scope.data.description
+          var newItem = {
+            title: $scope.data.title,
+            description: $scope.data.description
           }
           return $scope.items.push(newItem);
         }
