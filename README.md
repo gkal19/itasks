@@ -13,3 +13,7 @@ No meio da bagunça de arquivos, perdi a pasta "raíz" do aplicativo e está fal
 Atualização: 25.04.2016 - 19:05:
 ---------
 Finalmente, tudo está neste repositório e aliás recomendo o Ionic a vocês. :smile:
+
+Atualização: 30.04.2016 - 23:46:
+---------
+Então, tive que atualizar algumas coisas e mudei a linguagem do aplicativo.
