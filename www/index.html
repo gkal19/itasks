@@ -1,38 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-  <title></title>
-  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-<script src="lib/ionic/js/ionic.bundle.js"></script>
-<script src="cordova.js"></script>
-<script src="js/app.js"></script>
-</head>
-<body ng-app="starter">
-
-  <ion-pane>
-    <ion-header-bar class="bar-stable">
-      <h1 class="title">iTasks</h1>
-    </ion-header-bar>
-    <ion-content ng-controller="AppCtrl">
-      <button class="button button-positive button-block" ng-click="addItemClick()">
-        Add Task
-      </button>
-      <ion-list show-reorder="showReorder">
-        <ion-item ng-repeat="item in items" ng-click="showItem(item)">
-          {{ item.title }}
-          <!--ion-option-button class="button-balanced" ng-click="realizarTarefa(item)">
-            Terminado
-          </ion-option-button>-->
-          <ion-option-button class="button-assertive" ng-click="removeItem(item)">
-            Delete
-          </ion-option-button>
-          <ion-reorder-button class="ion-navicon" on-reorder="moveItem(item, $fromIndex, $toIndex)"></ion-reorder-button>
-        </ion-item>
-      </ion-list>
-    </ion-content>
-  </ion-pane>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">iTasks</h1>
+      </ion-header-bar>
+      <ion-content ng-controller="AppCtrl">
+        <button class="button button-positive button-block" ng-click="addItemClick()">
+          Add Task
+        </button>
+        <ion-list show-reorder="showReorder">
+          <ion-item ng-repeat="item in items" ng-click="showItem(item)">
+            {{ item.title }}
+            <ion-option-button class="button-assertive" ng-click="removeItem(item)">
+              Completed
+            </ion-option-button>
+            <ion-reorder-button class="ion-navicon" on-reorder="moveItem(item, $fromIndex, $toIndex)"></ion-reorder-button>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-pane>
+  </body>
 </html>
