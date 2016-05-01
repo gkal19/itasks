@@ -1,10 +1,10 @@
 # itasks
 Aplicativo para gerenciamento de tarefas criado com Ionic/Cordova.
 
-![repo1](http://imgur.com/jE4jhKu.png) 
-![repo2](http://imgur.com/ioKxBmi.png)
-![repo3](http://imgur.com/MXElhBc.png) 
-![repo4](http://imgur.com/q43hhG6.png)
+![repo1](http://imgur.com/tYWc9Ij.png) 
+![repo2](http://imgur.com/Eq6wiaR.png)
+![repo3](http://imgur.com/Oj7BRhz.png) 
+![repo4](http://imgur.com/bABbkpd.png)
 
 Atualização: 25.04.2016 - 18:00:
 ---------
